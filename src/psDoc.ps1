@@ -5,7 +5,7 @@ param(
     [parameter(Mandatory=$false, Position=3)] [string] $fileName = 'index.html'
 )
 
-function FixString ($in = '', [bool]$includeBreaks = $false){
+function FixString ($in = '', [bool]$includeBreaks = $true){
     if ($in -eq $null) { return }
 
     $rtn = $in.Replace('&', '&amp;').Replace('<', '&lt;').Replace('>', '&gt;').Trim()
