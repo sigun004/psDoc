@@ -1,3 +1,6 @@
+have done some modifications to fit my usage for powershell.
+
+
 psDoc is a Powershell Help Document generator.
 
 ----
